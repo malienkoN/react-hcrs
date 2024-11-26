@@ -1,5 +1,5 @@
 import { menuData } from "../../data.js";
-import MenuItem from "../../MenuItem/index.jsx";
+import MenuItem from "../MenuItem/index.jsx";
 
 const Menu = () => {
     return (
