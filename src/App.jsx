@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import LoginForm from "./components/LoginForm";
+import Menu from "./components/Menu";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     👉 Welcome! Please start by telling us your name:
                 </p>
                 <LoginForm />
+                <Menu />
             </main>
         </div>
     );
