@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import LoginForm from "./components/LoginForm";
 import Menu from "./components/Menu";
+import Cart from "./components/Cart";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 </p>
                 <LoginForm />
                 <Menu />
+                <Cart />
             </main>
         </div>
     );

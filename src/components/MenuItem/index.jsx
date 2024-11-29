@@ -1,10 +1,5 @@
 import { useState } from "react";
-
-const formattedMoney = (moneyValue) =>
-    moneyValue.toLocaleString("en-US", {
-        style: "currency",
-        currency: "EUR",
-    });
+import { formattedMoney } from "../../helpers/format";
 
 const MenuItem = ({ item }) => {
     const [count, setCount] = useState(1);
