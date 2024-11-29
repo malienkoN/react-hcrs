@@ -1,3 +1,4 @@
+import Button from "../Button";
 import CartItem from "../CartItem";
 
 const cartItems = [
@@ -36,8 +37,8 @@ const Cart = () => {
             </div>
 
             <div className="cart-actions">
-                <button className="order-btn">Order pizzas</button>
-                <button className="clear-btn">Clear cart</button>
+                <Button className="order-btn">Order pizzas</Button>
+                <Button className="clear-btn">Clear cart</Button>
             </div>
         </div>
     );

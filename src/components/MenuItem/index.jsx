@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { formattedMoney } from "../../helpers/format";
+import Button from "../Button";
 
 const MenuItem = ({ item }) => {
     const [count, setCount] = useState(1);
@@ -20,21 +21,21 @@ const MenuItem = ({ item }) => {
             </div>
             <div className="cart-controls">
                 <div className="counter">
-                    <button
+                    <Button
                         className="decrement"
-                        aria-label="Decrease quantity"
+                        ariaLabel="Decrease quantity"
                         onClick={() => setCount(count - 1)}
                     >
                         -
-                    </button>
+                    </Button>
                     <span>{count}</span>
-                    <button
+                    <Button
                         className="increment"
-                        aria-label="Increase quantity"
+                        ariaLabel="Increase quantity"
                         onClick={() => setCount(count + 1)}
                     >
                         +
-                    </button>
+                    </Button>
                 </div>
                 {!item.soldOut && (
                     <button className="add-to-cart">ADD TO CART</button>

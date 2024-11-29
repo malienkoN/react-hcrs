@@ -1,13 +1,19 @@
-import styles from "./index.module.css";
-
 const Button = (props) => {
-    const { type = "button", onClick, disabled = false, children } = props;
+    const {
+        type = "button",
+        className,
+        onClick,
+        disabled = false,
+        children,
+        ariaLabel,
+    } = props;
     return (
         <button
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className={styles.button}
+            className={className}
+            aria-label={ariaLabel}
         >
             {children}
         </button>
