@@ -1,23 +1,21 @@
+import { Routes, Route } from "react-router";
+// pages
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Cart from "./pages/Cart";
+// components
 import Header from "./components/Header";
-import LoginForm from "./components/LoginForm";
-import Menu from "./components/Menu";
-import Cart from "./components/Cart";
 
 function App() {
     return (
         <div className="wrapper">
             <Header />
             <main className="content">
-                <h1>The best pizza.</h1>
-                <p className="subtitle">
-                    Straight out of the oven, straight to you.
-                </p>
-                <p className="welcome">
-                    👉 Welcome! Please start by telling us your name:
-                </p>
-                <LoginForm />
-                <Menu />
-                <Cart />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/menu" element={<Menu />} />
+                    <Route path="/cart" element={<Cart />} />
+                </Routes>
             </main>
         </div>
     );

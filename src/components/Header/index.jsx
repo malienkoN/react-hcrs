@@ -1,16 +1,39 @@
+import { Link, NavLink } from "react-router";
+
 // components
 import TextInput from "../TextInput";
 
 const Header = () => {
     return (
         <header className="header">
-            <a className="logo" href="/">
+            <Link className="logo" to="/">
                 React Pizza
-            </a>
+            </Link>
             <nav>
-                <a href="/login">Login</a>
-                <a href="/menu">Menu</a>
-                <a href="/cart">Cart</a>
+                <NavLink
+                    to="/"
+                    style={({ isActive }) => ({
+                        fontWeight: isActive ? "700" : "400",
+                    })}
+                >
+                    Main
+                </NavLink>
+                <NavLink
+                    to="/menu"
+                    style={({ isActive }) => ({
+                        fontWeight: isActive ? "700" : "400",
+                    })}
+                >
+                    Menu
+                </NavLink>
+                <NavLink
+                    to="/cart"
+                    style={({ isActive }) => ({
+                        fontWeight: isActive ? "700" : "400",
+                    })}
+                >
+                    Cart
+                </NavLink>
             </nav>
             <form>
                 <TextInput placeholder="Search for the order #" />

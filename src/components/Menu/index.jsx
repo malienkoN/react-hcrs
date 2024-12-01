@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MenuItem from "../MenuItem/index.jsx";
 
-const Menu = () => {
+const MenuList = () => {
     const [menuData, setMenuData] = useState([]);
 
     useEffect(() => {
@@ -30,4 +30,4 @@ const Menu = () => {
     );
 };
 
-export default Menu;
+export default MenuList;
